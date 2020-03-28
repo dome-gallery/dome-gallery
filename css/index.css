@@ -28,7 +28,9 @@ p {
 }
 
 .zoomed {
-  zoom: 1.7;
+  -webkit-transform: scale(1.7);
+      -ms-transform: scale(1.7);
+          transform: scale(1.7);
 }
 
 .window {
@@ -46,6 +48,11 @@ p {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-transition: -webkit-transform ease-in-out .3s;
+  transition: -webkit-transform ease-in-out .3s;
+  -o-transition: transform ease-in-out .3s;
+  transition: transform ease-in-out .3s;
+  transition: transform ease-in-out .3s, -webkit-transform ease-in-out .3s;
 }
 
 #container {
