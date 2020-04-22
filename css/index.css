@@ -27,12 +27,6 @@ p {
   margin-bottom: 25px;
 }
 
-.zoomed {
-  -webkit-transform: scale(1.7);
-      -ms-transform: scale(1.7);
-          transform: scale(1.7);
-}
-
 .window {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -55,6 +49,24 @@ p {
   transition: transform ease-in-out .3s, -webkit-transform ease-in-out .3s;
 }
 
+_::-webkit-full-page-media, _:future, :root .window {
+  -webkit-transform: scale(2.1);
+      -ms-transform: scale(2.1);
+          transform: scale(2.1);
+}
+
+.zoomed {
+  -webkit-transform: scale(1.7);
+      -ms-transform: scale(1.7);
+          transform: scale(1.7);
+}
+
+_::-webkit-full-page-media, _:future, :root .zoomed {
+  -webkit-transform: scale(3.2);
+      -ms-transform: scale(3.2);
+          transform: scale(3.2);
+}
+
 #container {
   width: 40vw;
   height: 20vw;
@@ -62,6 +74,12 @@ p {
   -webkit-perspective: 39vw;
           perspective: 39vw;
 }
+
+_::-webkit-full-page-media, _:future, :root #container {
+  -webkit-perspective: 19vw;
+          perspective: 19vw;
+}
+
 #room {
   width: 100%;
   height: 100%;
