@@ -238,12 +238,11 @@ _::-webkit-full-page-media, _:future, :root #container {
 
 #info-wrapper {
   background: #fff;
-  /*border-radius: 2px;*/
   position: absolute;
   top: 34px;
-  right: 56px;
+  right: 0;
   height: 90vh;
-  width: 77vw;
+  width: 90vw;
   padding: 15px;
 }
 
@@ -265,5 +264,6 @@ _::-webkit-full-page-media, _:future, :root #container {
   #info-wrapper {
     padding: 55px;
     width: 36vw;
+    right: 56px;
   }
 }
