@@ -213,9 +213,6 @@ _::-webkit-full-page-media, _:future, :root #container {
 .arrow:first-child {
   margin-left: 0;
   margin-right: .5vw;
-  -webkit-transform: rotate(180deg);
-      -ms-transform: rotate(180deg);
-          transform: rotate(180deg);
 }
 
 .info {
