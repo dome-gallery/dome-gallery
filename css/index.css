@@ -99,11 +99,7 @@ _::-webkit-full-page-media, _:future, :root #container {
 }
 
 .wall {
-  cursor: zoom-in;
-}
-
-.zoomed .wall {
-  cursor: zoom-out;
+  cursor: crosshair;
 }
 
 .content {
