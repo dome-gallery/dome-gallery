@@ -98,6 +98,14 @@ _::-webkit-full-page-media, _:future, :root #container {
   text-align: center;
 }
 
+.wall {
+  cursor: zoom-in;
+}
+
+.zoomed .wall {
+  cursor: zoom-out;
+}
+
 .content {
   width: 30vw;
   height: 20vw;
