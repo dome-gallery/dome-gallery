@@ -27,10 +27,6 @@ p {
   margin-bottom: 25px;
 }
 
-.zoomed {
-  zoom: 1.7;
-}
-
 .window {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -46,6 +42,29 @@ p {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-transition: -webkit-transform ease-in-out .3s;
+  transition: -webkit-transform ease-in-out .3s;
+  -o-transition: transform ease-in-out .3s;
+  transition: transform ease-in-out .3s;
+  transition: transform ease-in-out .3s, -webkit-transform ease-in-out .3s;
+}
+
+_::-webkit-full-page-media, _:future, :root .window {
+  -webkit-transform: scale(2.1);
+      -ms-transform: scale(2.1);
+          transform: scale(2.1);
+}
+
+.zoomed {
+  -webkit-transform: scale(1.7);
+      -ms-transform: scale(1.7);
+          transform: scale(1.7);
+}
+
+_::-webkit-full-page-media, _:future, :root .zoomed {
+  -webkit-transform: scale(3.2);
+      -ms-transform: scale(3.2);
+          transform: scale(3.2);
 }
 
 #container {
@@ -55,6 +74,12 @@ p {
   -webkit-perspective: 39vw;
           perspective: 39vw;
 }
+
+_::-webkit-full-page-media, _:future, :root #container {
+  -webkit-perspective: 19vw;
+          perspective: 19vw;
+}
+
 #room {
   width: 100%;
   height: 100%;
@@ -71,6 +96,10 @@ p {
   position: absolute;
   font: 40px;
   text-align: center;
+}
+
+.wall {
+  cursor: crosshair;
 }
 
 .content {
@@ -175,7 +204,7 @@ p {
   color: #555;
   cursor: pointer;
   font-size: 20px;
-  margin-right: .5vw;
+  margin-left: .5vw;
   -webkit-transition: opacity ease-in-out .2s;
   -o-transition: opacity ease-in-out .2s;
   transition: opacity ease-in-out .2s;
@@ -185,9 +214,9 @@ p {
   opacity: .7;
 }
 
-.arrow:last-child {
-  margin-right: 0;
-  margin-left: .5vw;
+.arrow:first-child {
+  margin-left: 0;
+  margin-right: .5vw;
 }
 
 .info {
@@ -213,12 +242,11 @@ p {
 
 #info-wrapper {
   background: #fff;
-  /*border-radius: 2px;*/
   position: absolute;
   top: 34px;
-  right: 56px;
+  right: 0;
   height: 90vh;
-  width: 77vw;
+  width: 90vw;
   padding: 15px;
 }
 
@@ -240,5 +268,6 @@ p {
   #info-wrapper {
     padding: 55px;
     width: 36vw;
+    right: 56px;
   }
 }
