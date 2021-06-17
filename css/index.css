@@ -97,6 +97,7 @@ p {
 .image-wrapper {
   position: relative;
   width: 100%;
+  margin-top: 3px;
   margin-bottom: 14px;
 }
 .image-wrapper img {
