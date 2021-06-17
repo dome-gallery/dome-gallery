@@ -45,9 +45,9 @@ p {
   -ms-user-select: none;
   user-select: none;
 }
-.mobile .container {
+/*.mobile .container {
   height: auto;
-}
+}*/
 .header {
   position: sticky;
   top: 0;
