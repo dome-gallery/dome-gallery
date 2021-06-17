@@ -161,7 +161,7 @@ var InfiniteMenu = /*#__PURE__*/function () {
 
     _classCallCheck(this, InfiniteMenu);
 
-    if (!isMobile) {
+    // if (!isMobile) {
       this.DOM = {
         el: el
       };
@@ -173,9 +173,9 @@ var InfiniteMenu = /*#__PURE__*/function () {
       requestAnimationFrame(function () {
         return _this.render();
       });
-    } else {
-      document.body.classList.add('mobile');
-    }
+    // } else {
+    //   document.body.classList.add('mobile');
+    // }
   }
 
   _createClass(InfiniteMenu, [{
