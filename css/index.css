@@ -34,7 +34,7 @@ p {
   width: 100vw;
   height: 100vh;
   position: relative;
-  overflow: auto;
+  overflow: scroll;
   -webkit-overflow-scrolling: touch;
   scrollbar-width: none; /* Hide scrollbar in FF */
   display: flex;
@@ -45,9 +45,10 @@ p {
   -ms-user-select: none;
   user-select: none;
 }
-/*.mobile .container {
+.mobile .container {
   height: auto;
-}*/
+  overflow: visible;
+}
 .header {
   position: -webkit-sticky;
   position: sticky;
