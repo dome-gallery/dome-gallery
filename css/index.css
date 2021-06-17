@@ -12,6 +12,8 @@ body {
   font-size: 17px;
   line-height: 1.15;
   font-family: 'Yantramanav', sans-serif;
+  overflow: hidden;
+  height: 100vh;
 }
 * {
   -webkit-box-sizing: border-box;
@@ -34,7 +36,7 @@ p {
   width: 100vw;
   height: 100vh;
   position: relative;
-  overflow: scroll;
+  overflow: auto;
   -webkit-overflow-scrolling: touch;
   scrollbar-width: none; /* Hide scrollbar in FF */
   display: flex;
