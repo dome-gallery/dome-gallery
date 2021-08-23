@@ -41,11 +41,11 @@ p {
   scrollbar-width: none; /* Hide scrollbar in FF */
   display: flex;
   flex-direction: column;
-  -webkit-touch-callout: none;
+/*  -webkit-touch-callout: none;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
-  user-select: none;
+  user-select: none;*/
 }
 .mobile .container {
   height: auto;
