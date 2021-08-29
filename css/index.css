@@ -147,7 +147,7 @@ p {
     flex: 1;
   }
   .article {
-    padding-top: 190px;
+    padding-top: 160px;
     display: flex;
   }
   .article:last-child {
