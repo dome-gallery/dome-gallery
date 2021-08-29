@@ -100,16 +100,18 @@ p {
 }
 .article {
   padding: 10px;
-  padding-top: 50px;
+  padding-top: 110px;
+  display: flex;
+  flex-direction: column-reverse;
 }
 .title-bold {
-  /*font-family: 'plakatregular';*/
+  font-weight: bold;
 }
 .article:last-child {
-  padding-bottom: 50px;
+  /*padding-bottom: 50px;*/
 }
 .artist-info {
-  margin-bottom: 20px;
+  margin-top: 20px;
 }
 .artist-info .links {
   display: flex;
@@ -151,13 +153,14 @@ p {
   }
   .article {
     padding-top: 160px;
-    display: flex;
+    flex-direction: row;
   }
   .article:last-child {
     /*padding-bottom: 200px;*/
   }
   .artist-info {
     width: 270px;
+    margin-top: 0;
   }
   .content {
     width: 100%;
@@ -165,8 +168,5 @@ p {
   }
   .wrapper {
     max-width: 650px;
-  }
-  .title-bold {
-    font-weight: bold;
   }
 }
