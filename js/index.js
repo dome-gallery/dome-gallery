@@ -284,3 +284,10 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 
 var menu = new _infinitemenu.default(document.querySelector('main.container'));
 },{"./infinitemenu":"v3Qa"}]},{},["QvaY"], null)
+
+document.addEventListener('DOMContentLoaded', function() {
+  document.lazyLoadInstance = new LazyLoad({
+    elements_selector: ".lazy",
+    load_delay: 600
+  });
+});

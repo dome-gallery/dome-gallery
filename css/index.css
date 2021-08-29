@@ -33,6 +33,9 @@ body {
 a {
   color: #222222;
 }
+a:hover {
+  text-decoration: none;
+}
 h1 {
   margin: 0;
 }
