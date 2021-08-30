@@ -17,7 +17,7 @@ body {
   -webkit-font-smoothing: antialiased;
   background: #FFFFFF;
   color: #222222;
-  font-size: 16px;
+  font-size: 15px;
   line-height: 1.2;
   font-family: 'cs', sans-serif;
   overflow: hidden;
@@ -77,7 +77,7 @@ p {
   left: 0;
   width: 100%;
   display: flex;
-  padding: 9px 10px;
+  padding: 4px 10px;
   /*background-color: rgba(255,255,255,.8);*/
   z-index: 9;
 }
@@ -86,7 +86,7 @@ p {
 }
 .header .text {
   text-transform: uppercase;
-  font-size: 25px;
+  font-size: 32px;
   line-height: 1.1;
   /*font-weight: normal;*/
   font-family: 'Oswald', sans-serif;
@@ -101,20 +101,21 @@ p {
 }
 .article {
   padding: 10px;
-  padding-top: 110px;
+  padding-top: 130px;
   display: flex;
   flex-direction: column-reverse;
 }
 .title-bold {
   /*font-weight: normal;*/
-  font-size: 18px;
+  font-size: 21px;
   font-family: 'Oswald', sans-serif;
+  margin-bottom: 14px;
 }
 .article:last-child {
   /*padding-bottom: 50px;*/
 }
 .artist-info {
-  margin-top: 20px;
+  margin-top: 15px;
 }
 .artist-info .links {
   display: flex;
