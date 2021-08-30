@@ -88,7 +88,8 @@ p {
   text-transform: uppercase;
   font-size: 25px;
   line-height: 1.1;
-  font-weight: 600;
+  font-weight: normal;
+  font-family: 'Anton', sans-serif;
 }
 .header .left {
   margin-right: 25px;
@@ -105,7 +106,9 @@ p {
   flex-direction: column-reverse;
 }
 .title-bold {
-  font-weight: bold;
+  font-weight: normal;
+  font-size: 18px;
+  font-family: 'Anton', sans-serif;
 }
 .article:last-child {
   /*padding-bottom: 50px;*/
@@ -139,7 +142,7 @@ p {
     line-height: 1.22;
   }
   .header {
-    padding: 3px 10px;
+    padding: 7px 10px;
   }
   .header .text {
     font-size: 42px;
@@ -168,5 +171,8 @@ p {
   }
   .wrapper {
     max-width: 650px;
+  }
+  .title-bold {
+    /*font-size: 21px;*/
   }
 }
