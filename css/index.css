@@ -51,7 +51,7 @@ p {
 .uppercase {
   text-transform: uppercase;
 }
-.container {
+.container, .container-about {
   width: 100vw;
   height: 100vh;
   position: relative;
@@ -66,7 +66,7 @@ p {
   -ms-user-select: none;
   user-select: none;*/
 }
-.mobile .container {
+.mobile .container, .mobile .container-about {
   height: auto;
   overflow: visible;
 }
@@ -101,9 +101,15 @@ p {
 }
 .article {
   padding: 10px;
-  padding-top: 130px;
+  padding-top: 80px;
   display: flex;
   flex-direction: column-reverse;
+}
+.article:first-child {
+  padding-top: 110px;
+}
+.section.loop__clone .article:first-child {
+  padding-top: 80px;
 }
 .title-bold {
   /*font-weight: normal;*/
@@ -111,11 +117,8 @@ p {
   font-family: 'Oswald', sans-serif;
   margin-bottom: 14px;
 }
-.article:last-child {
-  /*padding-bottom: 50px;*/
-}
 .artist-info {
-  margin-top: 15px;
+  /*margin-top: 15px;*/
 }
 .artist-info .links {
   display: flex;
@@ -156,11 +159,14 @@ p {
     flex: 1;
   }
   .article {
-    padding-top: 180px;
+    padding-top: 100px;
     flex-direction: row;
   }
-  .article:last-child {
-    /*padding-bottom: 200px;*/
+  .article:first-child {
+    padding-top: 180px;
+  }
+  .section.loop__clone .article:first-child {
+    padding-top: 100px;
   }
   .artist-info {
     width: 270px;
